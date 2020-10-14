@@ -1,0 +1,29 @@
+O projeto Agent0 cria um ambiente de interação entre um mundo 
+com um agente (o Agent0) e um cliente utilizando sockets.
+
+Para correr o programa deve executar-se o main.py (servidor) e
+ depois o exemplo.py ou o client.py como exemplos de clientes.
+
+Na pasta input_files, estão os ficheiros com as coordenadas relativamente
+às posições dos obstáculos, das bombas e do objetivo. Note que essas posições
+deverão estar de acordo com a dimensão do mundo.
+
+Um dos ficheiros é o ficheiro weigh_file.txt. Este ficheiro contém para cada
+casa do mundo o valor do peso no formato x y w. Todas as posições do mundo 
+devem estar representadas neste ficheiro. O programa não permite pesos 
+inferiores a 1. 
+
+Existe um erro no programa que não permite aceitar dimensões de mundo
+com coodernadas x diferentes de y (só aceita mundos quadrados).
+
+O 'exemplo_search.py' mostra como é feita a pesquisa breadth first no mundo simulado.
+Convém que o mundo não seja muito grande pois o número de percursos pesquisados aumenta
+exponencialmente com a dimensão do mundo.
+
+Agent0 project creates an interaction environment to agents using sockets.
+To run the program it must be executed main.py (server) and, then, exemplo.py (client).
+In the folder input_files, a set of files keep coordinates (x means row and y means column) for
+obstacles, bombs and goals. The localization of these entities must be follow the maximum value for
+xy coordinates.
+
+There is an error in the program. It doesn't accept world dimensions which are not a square (x must be equal to y).
